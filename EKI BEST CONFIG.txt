@@ -1,0 +1,16 @@
+
+---- documentation redis ----
+$ docker run --name some-redis -d redis
+---- documentation redis ----
+
+
+---------- eki redis config
+docker pull redis:6.2.4-alpine
+
+docker container create --name redis_6.2.4_6379 \
+--restart always \
+-p 6379:6379 \
+redis:6.2.4-alpine
+
+docker container start redis_6.2.4_6379 
+---------- eki redis config
